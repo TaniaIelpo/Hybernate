@@ -24,7 +24,7 @@ public class Classes {
     @Column (nullable = false)
     private String description;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "student")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "classes")
     private List<Enrollement> enrollements;
 
 }
