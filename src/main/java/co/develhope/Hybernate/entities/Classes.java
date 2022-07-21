@@ -10,7 +10,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "classes")
-
 @AllArgsConstructor
 @NoArgsConstructor
 
@@ -25,7 +24,7 @@ public class Classes {
     @Column (nullable = false)
     private String description;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "classes")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "student")
     private List<Enrollement> enrollements;
 
 }
